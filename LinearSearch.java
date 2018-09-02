@@ -3,6 +3,7 @@ public class LinearSearch implements Practice2Search{
     public String searchName() {
         return "linear";
     }
+
     public int search(int [] arr, int target){
         for (int i = 0; i < arr.length; i++){ //keeps going through the array until the target is found or the end is reached
             if (arr[i] == target)
