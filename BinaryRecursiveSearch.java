@@ -2,7 +2,7 @@ public class BinaryRecursiveSearch implements Practice2Search{
 
     @Override
     public String searchName() {
-        return "binary";
+        return "binaryrecursive";
     }
 
     @Override
@@ -11,7 +11,7 @@ public class BinaryRecursiveSearch implements Practice2Search{
     }
     private int binarySearch(int[] arr, int target, int min, int max){
         int mid = (min+max)/2;
-        while(min <= max){
+        while(min < max){
             if (arr[mid] == target)
                 return mid;
             else if (arr[mid] < target) //the target is in the upper half

@@ -2,7 +2,7 @@ public class BinaryIterativeSearch implements Practice2Search {
 
     @Override
     public String searchName() {
-        return "binary";
+        return "binaryiterative";
     }
 
     @Override
@@ -10,7 +10,7 @@ public class BinaryIterativeSearch implements Practice2Search {
         int min = 0;
         int max = arr.length;
         int mid = (min + max) / 2;
-        while (min <= max) {
+        while (min < max) {
             if (arr[mid] == target) {
                 return mid;
             }
